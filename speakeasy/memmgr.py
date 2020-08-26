@@ -267,7 +267,7 @@ class MemoryManager(object):
 
     def purge_memory(self):
         """
-        Unmamp all current blocks of mapped memory
+        Unmap all current blocks of mapped memory
         """
         for region in self.get_mem_regions():
             base, end, perms = region
